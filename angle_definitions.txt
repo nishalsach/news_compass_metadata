@@ -1,0 +1,18 @@
+# News Angle Definitions for Research Papers
+
+Scientific papers, discoveries and events can be framed for different kinds of audiences through the use of news angles. 
+Many kinds of news angles exist, and not all angles apply to all scientific papers, but some papers can have 2-3 applicable news angles. 
+Not all papers will have a news angle, most papers will not have a news angle.
+Science journalists look for such news angles when reading papers to determine whether a paper is newsworthy, and whether it can lend itself to a news angle they are interest in. Below are some examples of common news angles used to frame science news stories.
+
+BROAD_IMPACT: Research that could affect large numbers of people in society.
+CONTROVERSY: Research that addresses or is likely to spark public controversy or conflicting opinions
+UNEXPECTEDNESS: Results that defy expectations or overturn prior assumptions.
+ASTONISHMENT: Research that causes amazed reactions (“Aah!”), such as being anomalous or quirky work, or dealing with some superlative (e.g., largest, fastest).
+BREAKTHROUGH: Research that makes a big breakthrough in a long-standing or persistent problem faced by researchers, or provides a drastically different way of doing science than before. Most science is incremental, very few papers are real breakthroughs.
+ECONOMIC_RELEVANCE: Research that demonstrates strong commercial potential, industry application, or economic consequence.
+POLICY_RELEVANCE: Research that has strong and obvious implications for regulation, governance, or social policy.
+ENVIRONMENTAL_RELEVANCE: Research with consequences for climate, ecology, or sustainability.
+COMMUNITY_IMPACT: Research that extremely specific communities (e.g., a local, professional, or underrepresented community) may be impacted by.
+GOOD_NEWS: The results present some really good news that readers would feel positively after reading.
+BAD_NEWS: The results present some really bad news that could create negative feelings after reading.

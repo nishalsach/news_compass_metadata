@@ -1,0 +1,76 @@
+{angle_definitions}
+
+---
+
+Task
+
+Given a research paper's title and abstract, identify the best 2–3 news angles from the list above that apply to the paper.
+For each chosen angle:
+1. Provide the angle label (exactly as named above)
+2. Provide a brief reasoning (1–2 sentences) explaining why this angle applies
+3. Provide a confidence score from 1-10, where 10 means you are highly confident this angle applies to the paper
+
+Output format (valid JSON only):
+{{
+  "angles": [
+    {{ "label": "ANGLE_NAME", "reasoning": "Brief explanation", "confidence": 8 }}
+  ]
+}}
+
+---
+
+Examples
+
+Example 1
+
+Title: Social Simulacra: Creating Populated Prototypes for Social Computing Systems
+
+Abstract: Social computing prototypes probe the social behaviors that may arise in an envisioned system design. This prototyping practice is currently limited to recruiting small groups of people. Unfortunately, many challenges do not arise until a system is populated at a larger scale. Can a designer understand how a social system might behave when populated, and make adjustments to the design before the system falls prey to such challenges? We introduce social simulacra, a prototyping technique that generates a breadth of realistic social interactions that may emerge when a social computing system is populated. Social simulacra take as input the designer's description of a community's design -- goal, rules, and member personas -- and produce as output an instance of that design with simulated behavior, including posts, replies, and anti-social behaviors. We demonstrate that social simulacra shift the behaviors that they generate appropriately in response to design changes, and that they enable exploration of "what if?" scenarios where community members or moderators intervene. To power social simulacra, we contribute techniques for prompting a large language model to generate thousands of distinct community members and their social interactions with each other; these techniques are enabled by the observation that large language models' training data already includes a wide variety of positive and negative behavior on social media platforms. In evaluations, we show that participants are often unable to distinguish social simulacra from actual community behavior and that social computing designers successfully refine their social computing designs when using social simulacra.
+
+Response:
+{{
+  "angles": [
+    {{ "label": "BREAKTHROUGH", "reasoning": "The paper clearly contributes a new methodological technique ("social simulacra," a novel prototyping method powered by LLMs). It's framed around improving design evaluation before deployment.", "confidence": 9 }},
+    {{"label": "COMMUNITY_IMPACT", "reasoning": "The tool directly affects designers of social computing systems — a professional community. The examples ("community members or moderators intervene") and implications for online community design clearly tie to community impact.", "confidence": 8 }},
+    {{"label": "ASTONISHMENT", "reasoning": "LLMs generating social interactions that are indistinguishable from real ones is a very uncanny finding.", "confidence": 7 }},
+  ]
+}}
+
+Example 2
+
+Title: Do Language Models Agree with Human Perceptions of Suspense in Stories?
+
+Abstract: Suspense is an affective response to narrative text that is believed to involve complex cognitive processes in humans. Several psychological models have been developed to describe this phenomenon and the circumstances under which text might trigger it. We replicate four seminal psychological studies of human perceptions of suspense, substituting human responses with those of different open-weight and closed-source LMs. We conclude that while LMs can distinguish whether a text is intended to induce suspense in people, LMs cannot accurately estimate the relative amount of suspense within a text sequence as compared to human judgments, nor can LMs properly capture the human perception for the rise and fall of suspense across multiple text segments. We probe the abilities of LM suspense understanding by adversarially permuting the story text to identify what cause human and LM perceptions of suspense to diverge. We conclude that, while LMs can superficially identify and track certain facets of suspense, they do not process suspense in the same way as human readers.
+
+Response:
+{{
+  "angles": [
+    {{ "label": "CONTROVERSY", "reasoning": "There's a tension between AI capabilities vs. human understanding of emotion. It's a hot topic in both academic and public discourse. The claim that "LLMs do not process suspense in the same way as humans" invites debate about whether LMs can ever "understand" stories.", "confidence": 8 }}
+  ]
+}}
+
+Example 3
+
+Title: Social and Political Framing in Search Engine Results
+
+Abstract: Search engines play a crucial role in shaping public discourse by influencing how information is accessed and framed. While prior research has extensively examined various dimensions of search bias -- such as content prioritization, indexical bias, political polarization, and sources of bias -- an important question remains underexplored: how do search engines and ideologically-motivated user queries contribute to bias in search results. This study analyzes the outputs of major search engines using a dataset of political and social topics. The findings reveal that search engines not only prioritize content in ways that reflect underlying biases but also that ideologically-driven user queries exacerbate these biases, resulting in the amplification of specific narratives. Moreover, significant differences were observed across search engines in terms of the sources they prioritize. These results suggest that search engines may play a pivotal role in shaping public perceptions by reinforcing ideological divides, thereby contributing to the broader issue of information polarization.
+
+Response:
+{{
+  "angles": [
+    {{ "label": "POLICY_RELEVANCE", "reasoning": "The work has clear implications for governance, regulation, and accountability of major tech platforms. Findings about bias and amplification directly inform policy debates around algorithmic transparency and platform responsibility.", "confidence": 9 }},
+    {{ "label": "CONTROVERSY", "reasoning": "Search engine bias and ideological polarization are very contentious topics involving conflicting public and corporate narratives.", "confidence": 8 }},
+    {{ "label": "BROAD_IMPACT", "reasoning": "Search engines affect virtually everyone's information access, making this a high-reach issue with widespread societal implications.", "confidence": 9 }},
+    {{ "label": "BAD_NEWS", "reasoning": "That search engines reinforce ideological divides is not good news, it is a cause for concern.", "confidence": 7 }},
+  ]
+}}
+
+---
+
+Now label this paper
+
+Title: {title}
+
+Abstract: {abstract}
+
+Response:

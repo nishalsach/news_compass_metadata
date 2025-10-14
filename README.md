@@ -2,7 +2,7 @@
 This repo contains the prompts we used to compute the News Angles for News Compass with the following model and configurations:
 
 Model : ``gpt-5-nano-2025-08-07``   
-Reasoning Effort: ``minimal``  (fastest for classification tasks)  
+Reasoning Effort: ``minimal``  (fast for classification tasks)  
 Text Verbosity: ``low``  (concise outputs)  
 Max Output Tokens: 600  (room for 3 angles with reasoning)  
 

@@ -1,5 +1,4 @@
-# Prompts for News Angles
-This repo contains the prompts we used to compute the News Angles for News Compass with the following model and configurations:
+# How We Generate News Angles
 
 Model : ``gpt-5-nano-2025-08-07``   
 Reasoning Effort: ``minimal``  (fast for classification tasks)  
